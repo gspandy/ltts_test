@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+<Appenders>
+	 <!-- 控制台 -->
+	<Console name="busi_console"> 
+	  <PatternLayout>
+        		<Pattern>[%d] [%p] [%C:%L] [%t] [%m]%n</Pattern>
+      </PatternLayout>
+	</Console>
+	 
+</Appenders>	
+
+	<Loggers>
+		
+		<!-- for JDBC -->
+		<Logger name="jdbc.audit" level="error" additivity="false">
+       		<AppenderRef ref="busi_console"/>
+		</Logger>
+		<Logger name="jdbc.resultset" level="error" additivity="false">
+       		<AppenderRef ref="busi_console"/>
+		</Logger>
+		<Logger name="jdbc.sqlonly" level="debug" additivity="false">
+       		<AppenderRef ref="busi_console"/>
+		</Logger>
+		<Logger name="jdbc.sqltiming" level="debug" additivity="false">
+       		<AppenderRef ref="busi_console"/>
+		</Logger>
+		<!-- for JDBC -->
+		
+		<!-- for 屏蔽第三方日志 -->
+		<Logger name="org.springframework" level="ERROR" additivity="false">
+       		<AppenderRef ref="busi_console"/>
+		</Logger>
+		<Logger name="org.mortbay" level="ERROR" additivity="false">
+       		<AppenderRef ref="busi_console"/>
+		</Logger>
+		<Logger name="freemarker" level="ERROR" additivity="false">
+       		<AppenderRef ref="busi_console"/>
+		</Logger>  
+		
+		<!-- for 屏蔽第三方日志 -->
+		
+		
+		
+		<Root level="debug" additivity="false"> 
+			<AppenderRef ref="busi_console"/>
+		</Root>
+
+		
+		<Logger name="sys.boot" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>
+		<Logger name="sys.poll" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>
+		<Logger name="sys.error" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>		
+		<Logger name="sys.profile" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>	
+		<Logger name="sys.metrics" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>
+		<Logger name="sys.onl.links" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>		
+		<Logger name="sys.onl.callpath" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>	
+		<Logger name="sys.onl.server" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>			
+		<Logger name="sys.bat.links" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>		
+		<Logger name="sys.bat.callpath" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>
+		<Logger name="sys.bat.server" level="debug" additivity="false">
+			<AppenderRef ref="busi_console"/>
+		</Logger>
+
+	</Loggers>
+	
+
+</Configuration>

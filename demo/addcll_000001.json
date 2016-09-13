@@ -1,0 +1,61 @@
+{
+	"input" : {
+		"crdlno" : "8000000180",
+		"prodcd" : "L00001",
+		"crcycd" : "01",
+		"effedt" : "20990909",
+		"custno" : "8000000180",
+		"addlst" : [{
+				"busino" : "020010010",
+				"crdlam" : "1000000000",
+				"cllevl" : "P"
+			}, {
+				"busino" : "9222287445445",
+				"crdlam" : "10000000000",
+				"cllevl" : "M"
+			}, {
+				"busino" : "444423123222",
+				"crdlam" : "10000000000",
+				"cllevl" : "V"
+			}
+		]
+	},
+	"comm_req" : {
+		"corpno" : "01",
+		"passwd" : null,
+		"frzpkey" : null,
+		"authtp" : null,
+		"authif" : null,
+		"mntrsq" : null,
+		"surefg" : null,
+		"fatype" : "''",
+		"aptrtp" : null,
+		"bstrsq" : null,
+		"smryds" : null,
+		"routky" : null,
+		"smsvrf" : null,
+		"tranus" : "10004",
+		"servno" : null,
+		"authlv" : null,
+		"authsq" : null,
+		"cptrcd" : null,
+		"authus" : null,
+		"prcscd" : null,
+		"sessid" : null,
+		"luyouleix" : null,
+		"scenid" : null,
+		"smrycd" : null,
+		"authfg" : null,
+		"tranbr" : null,
+		"acctno" : null,
+		"servtp" : null,
+		"aubrlv" : null,
+		"authpw" : null,
+		"device" : null,
+		"favalu" : "''",
+		"authbr" : null
+	},
+	"sys" : {
+		"prcscd" : "addcll"
+	}
+}
